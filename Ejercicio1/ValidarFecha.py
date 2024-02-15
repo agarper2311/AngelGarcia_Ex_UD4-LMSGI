@@ -19,7 +19,7 @@ def validate_date_format(date_string):
     except ValueError:
         return False
 
-with open("Unidad-4\AngelGarcia_Ex_UD4-LMGSI\Ejercicio1\datos.json") as json_file:
+with open("Ejercicio1\datos.json") as json_file:
     data = json.load(json_file)
     if "fecha_nacimiento" in data:
         if validate_date_format(data["fecha_nacimiento"]):
